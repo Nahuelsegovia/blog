@@ -4,36 +4,14 @@
    include_once('./includes/conexion.php');
    session_start();
    $errors= array();
-   $file_name = $_FILES['image']['name'];
-   $file_size =$_FILES['image']['size'];
-   $file_tmp =$_FILES['image']['tmp_name'];
-   $file_type=$_FILES['image']['type'];
-   $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
-   
-   $extensions= array("jpeg","jpg","png");
-
-   if(isset($_FILES['image'])){
-      if(in_array($file_ext,$extensions)=== false){
-        $errors[]="Solo imagenes PNG O JPG";
-    }
-    
-    if($file_size > 2097152){
-        $errors[]='La imagen no puede pesar mas de 2mb';
-    }
-    
-    if(empty($errors)==true){
-        move_uploaded_file($file_tmp,"images/".$file_name);
-    }else{
-        print_r($errors);
-      }
-   }
    
 $contenido = $_POST['editor1'];
 $titulo_post = $_POST['tituloPost'];
 $intro_post = $_POST['introPost'];
-$portada_post = $file_name;
 
-$mysqli->query(" INSERT INTO post(id, contenido, titulo_post, intro_post, portada_post ) VALUES(id, '$contenido', '$titulo_post', '$intro_post', '$portada_post') ");
+if(isset($contenido) && isset($titulo_post) && isset($intro_post) ){
+  $mysqli->query(" INSERT INTO post(id, contenido, titulo_post, intro_post ) VALUES(id, '$contenido', '$titulo_post', '$intro_post') ");
+}
 
 
 
