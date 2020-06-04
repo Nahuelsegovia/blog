@@ -1,0 +1,102 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.menu .item-menu{
+    margin: 40px;
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    color: red;
+    transition: 0.5s;
+}
+.posteos{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.posteos input{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 0px 0px 1px black;
+    background: white;
+    height: 45px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.posteos input:hover{
+    color: red;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+footer{
+    text-align: center;
+}
+
+
+.indexx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17%;
+}
+
+.indexx .nombre{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.indexx .menu-indexx{
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 35px;
+}
+.indexx .menu-indexx a{
+    text-decoration: none;
+    color: black;
+}
+
+.indexx .menu-indexx a:hover{
+    color: red;
+    transition: 0.5s;
+}
+.indexx .menu-indexx .item-menu{
+    margin: 40px;
+}
+
+.iconos-indexx{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.iconos-indexx{
+    text-decoration: none;
+    color: black;
+}
