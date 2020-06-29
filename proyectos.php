@@ -57,6 +57,16 @@
         </div>
         <hr>
         <div class="posteos proyectos">
+            <h1>Apiseries</h1>
+            <img src="./images/apiseries.png" alt="Proyecto Apiseries">
+            <p>Apiseries es una API REST hecha en Laravel que nos permite crear, ver y eliminar series 
+            de nuestra base de datos, en ella podemos guardar las url de las imágenes, openings  la descripcion de la serie y el lugar en 
+            donde podemos ver. En este ejemplo consumí la API con Javascript Vanilla e hice el diseño ui 
+            con HTML5, CSS3, y algunas configuraciones de Bootstrap + Flexbox.
+            </p>
+        </div>
+        <hr>
+        <div class="posteos proyectos">
             <h1>Commercia</h1>
             <img src="./images/commercia.png" alt="Proyecto Commercia">
             <p>Commercia es un proyecto en el que me encuentro trabajando actualmente, ya utilizando un Framework,
